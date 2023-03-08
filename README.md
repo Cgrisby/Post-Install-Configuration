@@ -6,9 +6,6 @@
 <h1>osTicket - Post-Install Configuration</h1>
 This tutorial outlines the post-install configuration of the open-source help desk ticketing system osTicket.<br />
 
-
-
-
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
@@ -21,43 +18,100 @@ This tutorial outlines the post-install configuration of the open-source help de
 
 <h2>Post-Install Configuration Objectives</h2>
 
-- Configure Departments
-- Configure Agent (worker)
-- Configure Roles
+- Configure Roles, Departments
+- Configure Teams and allow anyone to create tickets
+- Configure Agents, Users
 - Configure SLA
+- Configure Help Topics
 
 <h2>Configuration Steps</h2>
-
 <p>
-<img src="https://i.imgur.com/TMJll19.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<h2>Login to osTicket as an Administrator</h2>
+<img src="https://imgur.com/KAd8Vno.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Departments were configured through the Agents tab under the Admin Panel. Departments are used to route tickets in help desk. The Deparments may be private or public and they can be assigned to 1 or more agents and managers. 
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/uR0FRaL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Agents were configured and given access to the help desk with the intent to respond and resolve tickets. When adding an Agent to the help desk, they can be be assigned to a Primary Department and given a Primary Role for the Tickets/Tasks routed to that department. Agents can be given Extended Access to additional departments of the help desk as well as assigned different Roles to those departments.
+After the initial installation and setup, the administrator can login to create roles, departments, teams, agents, users, SLAs, and Help Topics on the ticket system. Also, the administrator can assign permissions and access to each user inside of the ticketing system. This can be based on the role, department, or any user with login credentials.
 </p>
 <br />
-
 <p>
-<img src="https://i.imgur.com/oR3MF2t.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<h2>Configure Roles </h2>
+<img src="https://imgur.com/EkKHhBE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Roles are the permissions granted to Agents per Department that they have access to. Each Role has a set of permissions that can be checked/unchecked for agents given that Role in association with a Department they have access to. An unlimited number of roles can be created and assigned to Agents with access to various departments. Roles are configured in the Agents tab under the Admin Panel.
+After the initial installation and setup, the administrator can login to create roles and assign permissions and access to each user inside of the ticketing system. You must be under "Admin Panel" and click on "Agents" --> click on "Roles". Next click on "Add New Role" to name and assign permissions to the role. Once completed, you can click on "Add Role" to confirm.
 </p>
 <br />
-
 <p>
-<img src="https://i.imgur.com/SRD6aI6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<h2>Configure Departments</h2>
+<img src="https://imgur.com/aQLwU3C.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-SLA Plans or Service Level Agreements. The purpose of the SLA Plan is to provide a length of time in which the help desk Administrator expects tickets to be closed. SLA Plans can be created by going to the Manage tab under the Admin Panel and clicking "Add New SLA Plans." 
-
-
+Also, the administrator can configure departments and assign permissions. You must be under "Admin Panel" and click on "Agents" --> click on "Departments". Next click on "Add New Department" to name and assign permissions. Once completed, you can click on "Create Dept" to confirm.
+</p>
+<br />
+<p>
+<h2>Configure Teams</h2>
+<img src="https://imgur.com/7KoSc0Q.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Next, the administrator can configure teams. You must be under "Admin Panel" and click on "Agents" --> click on "Teams". Next click on "Add New Team" to name the team and you have the option to add memebers under the "Members" tab. Once completed, you can click on "Create Team" to confirm.
+</p>
+<br />
+<p>
+<h2> Allow Everyone to Create Tickets</h2>
+<img src="https://imgur.com/OAEAKrO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+The administrator can allow anyone to create tickets. Under the "Admin Panel --> click on "Settings" --> click on "User Settings" and check the box for "Require Registration"
+</p>
+<br />
+<p>
+<h2>Configure Agents (Workers)</h2>
+<img src="https://imgur.com/gYzkii9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Under the Admin Panel --> click on "Users" --> click on "Add New Agent"
+</p>
+<br />
+<h2>Configure Users (Customers)</h2>
+<img src="https://imgur.com/eCw82U2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Under the Agent Panel --> click on "Users" --> click on "Add New"
+</p>
+<br />
+<h2>Configure Users (Customers) Continued</h2>
+<img src="https://imgur.com/PiNAqyY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Add the users email address and Full name and select "Add User"
+</p>
+<br />
+<h2>Configure Service Level Agreement (SLA)</h2>
+<img src="https://imgur.com/rbAxPdE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Under the Admin Panel --> Select "Manage" --> Select "SLA" --> Select "Add New SLA Plan"
+</p>
+<br />
+<h2>Configure Service Level Agreement (SLA) Continued</h2>
+<img src="https://imgur.com/3NdXXsm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Add the SLA name, Status, Grace Period, Schedule, and select "Add Plan" to confirm.
+</p>
+<br />
+<h2>Configure Help Topics</h2>
+<img src="https://imgur.com/OTspJyB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Under the Admin Panel --> Select "Manage" --> Select "Help Topics" --> Select "Add New Help Topic"
+</p>
+<br />
+<h2>Configure Help Topics Continued</h2>
+<img src="https://imgur.com/NkzeaT2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Add the Help Topic name, status, and type. Also, the administrator can add what option the help topic can go under. Once complete, select "Add Topic"
 </p>
 <br />
